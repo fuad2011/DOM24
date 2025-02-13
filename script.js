@@ -48,7 +48,11 @@ inp4.addEventListener("input", () => {
 function func1(){
     let newwindow = window.open();
     let newe = document.createElement("p");
-    newe.innerHTML = "вы вошли в акккаунт:" + inp1;
-    newe.innerHTML = "ваш пароль:" + inp3;
+    let newe2 = document.createElement("p");
+    let newe3 = document.createElement("h1");
+    newe.innerHTML = "вы вошли в акккаунт:" + inp1.value;
+    newe2.innerHTML = "ваш пароль:" + inp3.value;
+    newe2.innerHTML = "ИЗВИНИТЕ НО ФАНДОМ ТОЛЬКО СТРОИТСЯ" ;
     newwindow.document.body.append(newe);
+    newwindow.document.body.append(newe2);
 }
