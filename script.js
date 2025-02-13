@@ -7,7 +7,7 @@ let p2 = document.getElementById("info2");
 let p3 = document.getElementById("info3");
 
 inp1.addEventListener("input", () => {
-    if (inp1.value.length <= 8) {
+    if (inp1.value.length <= 3) {
         p1.innerHTML = "введите текст длиной больше 8ми символов !БЛИН!";
         p1.style.color = "red";
     } else {
@@ -33,16 +33,6 @@ inp3.addEventListener("input", () => {
     } else {
         p3.innerHTML = "Всё норм";
         p3.style.color = "green";
-    }
-});
-
-inp4.addEventListener("input", () => {
-    if (inp4.value !== inp3.value) {
-        p4.innerHTML = "не совподают прикинь";
-        p4.style.color = "red";
-    } else {
-        p4.innerHTML = "Всё норм";
-        p4.style.color = "green";
     }
 });
 function func1(){
